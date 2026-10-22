@@ -1,0 +1,78 @@
+/* ---------- Theme ---------- */
+:root {
+  --brew-dark: #3b2418;
+  --brew-mid: #6f4e37;
+  --brew-light: #c8a27a;
+  --brew-cream: #f7efe6;
+}
+
+body {
+  background-color: var(--brew-cream);
+}
+
+/* ---------- Navbar & hero ---------- */
+.brew-navbar {
+  background-color: var(--brew-dark);
+}
+
+.brew-hero {
+  background: linear-gradient(135deg, var(--brew-dark) 0%, var(--brew-mid) 100%);
+}
+
+.brew-badge {
+  background-color: var(--brew-light);
+  color: var(--brew-dark);
+  font-weight: 600;
+  padding: 0.5em 1em;
+}
+
+.perks li {
+  font-size: 1.05rem;
+}
+
+.perk-icon {
+  display: inline-block;
+  width: 2rem;
+}
+
+/* ---------- Buttons & form focus ---------- */
+.btn-brew {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: var(--brew-mid);
+  --bs-btn-border-color: var(--brew-mid);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: var(--brew-dark);
+  --bs-btn-hover-border-color: var(--brew-dark);
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: var(--brew-dark);
+  --bs-btn-active-border-color: var(--brew-dark);
+  --bs-btn-focus-shadow-rgb: 200, 162, 122;
+}
+
+.form-control:focus {
+  border-color: var(--brew-light);
+  box-shadow: 0 0 0 0.25rem rgba(200, 162, 122, 0.35);
+}
+
+/* ---------- Result card ---------- */
+.result-card {
+  border: 0;
+  border-left: 6px solid transparent;
+}
+
+.result-card.is-success {
+  border-left-color: var(--bs-success);
+}
+
+.result-card.is-failure {
+  border-left-color: var(--bs-danger);
+}
+
+#result:focus {
+  outline: none;
+}
+
+.password-masked {
+  font-family: SFMono-Regular, Menlo, Consolas, monospace;
+  letter-spacing: 0.15em;
+}
